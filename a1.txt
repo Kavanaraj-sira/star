@@ -1,0 +1,8 @@
+#!/bin/bash
+read -p "enter the file to check:" myfile
+if [ -f "$myfile" ]; then
+echo "$myfile is exists"
+else
+echo "$myfile does not exists"
+fi
+
