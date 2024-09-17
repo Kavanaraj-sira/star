@@ -1,0 +1,10 @@
+#!/bin/bash
+#!/bin/bash
+read -p "Enter file name: " filename
+if [ -e "$filename" ]; then
+  content=$(cat "$filename")
+  echo "$content"
+else
+  echo "File not found: $filename"
+fi
+
